@@ -1,0 +1,60 @@
+/* FUNDO DA PAGINIA */
+body {
+    background-color: #1d1d1d;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+/* TITULOO */
+#titulo-principal {
+    color: gold;
+    text-align: center;
+    font-size: 40px;
+}
+
+/* SUBTITULOS */
+h2 {
+    color: crimson;
+}
+
+/* TAMANHO DO TEXTO */
+p, li {
+    font-size: 18px;
+}
+
+.secao {
+    background-color: #2c2c2c;
+
+    margin: 20px;
+    padding: 15px;
+
+    border-width: 3px;
+    border-style: solid;
+    border-color: darkred;
+}
+
+/* IMAGEM*/
+img {
+    width: 400px;
+
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+
+a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+}
+
+ul {
+    list-style-type: square;
+}
+
+footer {
+    text-align: center;
+}
