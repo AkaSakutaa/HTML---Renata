@@ -1,0 +1,101 @@
+/* Fonte e fundo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #202020;
+    color: white;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Menu usando flexbox */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Título da seção */
+h2 {
+    text-align: center;
+    color: #1f4e79;
+}
+
+/* Grid dos produtos */
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    padding: 20px;
+}
+
+/* Cards */
+.card {
+    background-color: white;
+
+    margin: 10px;
+    padding: 15px;
+
+    border: 2px solid #c0c0c0;
+    border-radius: 10px;
+
+    text-align: center;
+
+    animation: aparecer 2s;
+}
+
+/* Imagens */
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Efeito ao passar o mouse */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Animação */
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    .produtos {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* Rodapé */
+footer {
+    background-color: #202020;
+    color: white;
+
+    text-align: center;
+
+    padding: 15px;
+}
