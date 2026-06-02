@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .formulario {
+            width: 450px;
+            border: 1px solid #000000;
+            padding: 25px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 6px;
+            margin-bottom: 14px;
+            border: 1px solid #000;
+            border-radius: 4px;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus,
+        input[type="date"]:focus,
+        select:focus,
+        textarea:focus {
+            outline: 2px solid #000000;
+            background-color: #f5f5f5;
+        }
+
+        .titulo-grupo {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .grupo-radio,
+        .grupo-check {
+            margin-bottom: 14px;
+        }
+
+        .grupo-radio label,
+        .grupo-check label {
+            font-weight: normal;
+            display: inline;
+            margin-left: 5px;
+        }
+
+        .grupo-radio div,
+        .grupo-check div {
+            margin-bottom: 4px;
+        }
+
+        input[type="file"] {
+            display: block;
+            margin-bottom: 18px;
+        }
+
+        .botoes {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            flex: 1;
+            padding: 9px;
+            border: 1px solid #000;
+            border-radius: 4px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .btn-enviar {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        .btn-enviar:hover {
+            background-color: #333333;
+        }
+
+        .btn-limpar {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .btn-limpar:hover {
+            background-color: #e0e0e0;
+        }
+
+        @media (max-width: 500px) {
+            .formulario {
+                width: 100%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="formulario">
+        <h1>Formulário mais balacobaco do que o do João Dreer</h1>
+
+        <label for="nome">Nome (provavelmente o seu é mais bonito do que João Dreer):</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Seu e-mail">
+
+        <label for="senha">Senha mais segura que o do João Dreer:</label>
+        <input type="password" id="senha" name="senha" placeholder="Sua senha">
+
+        <label for="nascimento">Data de nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento">
+
+        <label for="curso">Curso:</label>
+        <select id="curso" name="curso">
+            <option value="">Selecione...</option>
+            <option value="informatica">Informática</option>
+            <option value="administracao">Administração</option>
+            <option value="enfermagem">Enfermagem</option>
+            <option value="direito">Direito</option>
+            <option value="engenharia">Engenharia</option>
+            <option value="outro">Outro</option>
+        </select>
+
+        <div class="grupo-radio">
+            <span class="titulo-grupo">Sexo:</span>
+            <div>
+                <input type="radio" id="masculino" name="sexo" value="masculino">
+                <label for="masculino">Masculino</label>
+            </div>
+            <div>
+                <input type="radio" id="feminino" name="sexo" value="feminino">
+                <label for="feminino">Feminino</label>
+            </div>
+        </div>
+
+        <div class="grupo-check">
+            <span class="titulo-grupo">Interesses:</span>
+            <div>
+                <input type="checkbox" id="doberman" name="interesses" value="doberman">
+                <label for="doberman">Doberman</label>
+            </div>
+            <div>
+                <input type="checkbox" id="bulldog" name="interesses" value="bulldog">
+                <label for="bulldog">Bulldog</label>
+            </div>
+            <div>
+                <input type="checkbox" id="pincher" name="interesses" value="pincher">
+                <label for="pincher">Pincher</label>
+            </div>
+            <div>
+                <input type="checkbox" id="pastor" name="interesses" value="pastor-alemao">
+                <label for="pastor">Pastor Alemão</label>
+            </div>
+            <div>
+                <input type="checkbox" id="caramelo" name="interesses" value="caramelo">
+                <label for="caramelo">Caramelo</label>
+            </div>
+            <div>
+                <input type="checkbox" id="João Dreer" name="interesses" value="João Dreer">
+                <label for="João Dreer">João Dreer</label>
+            </div>
+        </div>
+
+        <label for="comentarios">JOGUE SEUS PENSAMENTOS FORA:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escreva algo..."></textarea>
+
+        <label>Upload de foto:</label>
+        <input type="file" id="foto" name="foto" accept="image/*">
+
+        <div class="botoes">
+            <button class="btn-enviar" type="button">Enviar</button>
+            <button class="btn-limpar" type="reset">Limpar</button>
+        </div>
+    </div>
+
+</body>
+</html>
